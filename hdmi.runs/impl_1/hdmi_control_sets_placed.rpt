@@ -1,0 +1,192 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Mon Nov 21 03:04:55 2022
+| Host         : DESKTOP-V4UGB68 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file hdmi_control_sets_placed.rpt
+| Design       : hdmi
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   114 |
+|    Minimum number of control sets                        |   114 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    18 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   114 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |   107 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              77 |           59 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |           12 |
+| Yes          | No                    | No                     |              41 |           22 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+----------------------------------------------+---------------------------+------------------+----------------+--------------+
+|   Clock Signal  |                 Enable Signal                |      Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+----------------------------------------------+---------------------------+------------------+----------------+--------------+
+|  clk_pixel_BUFG |                                              | mips/datapath/alu/en_next |                2 |              6 |         3.00 |
+|  clk_pixel_BUFG |                                              | p_0_in                    |                5 |             11 |         2.20 |
+|  clk_pixel_BUFG | CounterY0                                    |                           |                4 |             11 |         2.75 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_104 |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_77  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_98  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_79  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_0   |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_1   |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_100 |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_101 |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_103 |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_106 |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_10  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_66  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_105 |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_11  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_102 |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_12  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_60  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_57  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_62  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_63  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_65  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_30  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_36  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_61  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_25  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_92  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_3   |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_2   |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_47  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_67  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_69  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_15  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_23  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_26  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_54  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_68  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_7   |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_70  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_51  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_19  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_22  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_56  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_44  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_32  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_53  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_41  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_64  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_31  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_28  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_24  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_17  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_18  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_16  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_37  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_39  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_4   |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_55  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_38  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_20  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_21  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_46  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_29  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_59  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_49  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_34  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_35  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_42  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_33  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_13  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_40  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_45  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_27  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_48  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_5   |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_50  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_6   |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_43  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_14  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_52  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_58  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_97  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_8   |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_75  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_72  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_87  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_71  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_94  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_80  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_91  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_96  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_74  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_78  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_93  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_73  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_99  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_95  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_84  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_83  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_86  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_82  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_89  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_85  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_76  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_81  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_88  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_9   |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | mips/datapath/regs/regs_reg_r1_0_31_6_11_90  |                           |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG |                                              | encode_R/channel/SR[0]    |                5 |             15 |         3.00 |
+|  clk_pixel_BUFG | mips/datapath/alu/en_next                    |                           |               18 |             30 |         1.67 |
+|  clk_pixel_BUFG |                                              |                           |               59 |             77 |         1.31 |
+|  clk_pixel_BUFG | mips/datapath/regs/en_write                  |                           |               11 |             88 |         8.00 |
++-----------------+----------------------------------------------+---------------------------+------------------+----------------+--------------+
+
+

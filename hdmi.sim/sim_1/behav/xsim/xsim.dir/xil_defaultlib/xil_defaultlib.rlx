@@ -1,0 +1,15 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/nguye/arty/hdmi/hdmi.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/ALU.v,1668511523,verilog,,C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/ALUControl.v,,ALU,,,,,,,,
+C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/ALUControl.v,1668528600,verilog,,C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/ControlUnit.v,,ALUControl,,,,,,,,
+C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/ControlUnit.v,1668528901,verilog,,C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/DatapathUnit.v,,ControlUnit,,,,,,,,
+C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/DatapathUnit.v,1668529921,verilog,,C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/InstructionMem.v,,DatapathUnit,,,,,,,,
+C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/InstructionMem.v,1668436798,verilog,,C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/MIPS.v,,InstructionMem,,,,,,,,
+C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/MIPS.v,1668503555,verilog,,C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/MIPSRam.v,,MIPS,,,,,,,,
+C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/MIPSRam.v,1668527729,verilog,,C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/Registers.v,,MIPSRam,,,,,,,,
+C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/Registers.v,1668430182,verilog,,C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/getPixelText.v,,Registers,,,,,,,,
+C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/getPixelText.v,1668514885,verilog,,C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/hdmi.v,,getPixelText,,,,,,,,
+C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/hdmi.v,1668531914,verilog,,,,TMDS_encoder;hdmi,,,,,,,,
