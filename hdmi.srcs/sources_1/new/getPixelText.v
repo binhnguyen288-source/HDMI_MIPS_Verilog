@@ -44,7 +44,8 @@ module getPixelText #(
     reg[15:0] write_pos = 0;
     always @(posedge clk) begin
         if (wr_enable) begin
-            str[wr_addr] <= wr_data;
+            str[write_pos] <= wr_data;
+            write_pos <= write_pos + 1;
         end
     end
     reg[font_width-1:0] FontMask[num_chars-1:0][font_height-1:0];

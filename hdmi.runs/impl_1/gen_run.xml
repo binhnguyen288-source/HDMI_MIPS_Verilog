@@ -1,62 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1668974595">
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1672133222">
   <File Type="ROUTE-PWR" Name="hdmi_power_routed.rpt"/>
   <File Type="PA-TCL" Name="hdmi.tcl"/>
+  <File Type="BITSTR-MMI" Name="hdmi.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="hdmi_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="hdmi_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="hdmi_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="hdmi_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="hdmi.msk"/>
-  <File Type="ROUTE-CLK" Name="hdmi_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="hdmi.vdi"/>
-  <File Type="BG-BIT" Name="hdmi.bit"/>
-  <File Type="BG-DRC" Name="hdmi.drc"/>
-  <File Type="BG-BGN" Name="hdmi.bgn"/>
-  <File Type="BG-BIN" Name="hdmi.bin"/>
-  <File Type="BITSTR-RBT" Name="hdmi.rbt"/>
-  <File Type="BITSTR-NKY" Name="hdmi.nky"/>
-  <File Type="BITSTR-BMM" Name="hdmi_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="hdmi.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="hdmi_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="hdmi.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="hdmi.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-TIMING" Name="hdmi_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="hdmi_opt.dcp"/>
   <File Type="OPT-DRC" Name="hdmi_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="hdmi.hwdef"/>
+  <File Type="PWROPT-DCP" Name="hdmi_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="hdmi_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="hdmi_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="hdmi_placed.dcp"/>
   <File Type="PLACE-IO" Name="hdmi_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="hdmi_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="hdmi_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="hdmi_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="hdmi_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="hdmi_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="hdmi_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="hdmi.bin"/>
+  <File Type="PLACE-TIMING" Name="hdmi_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="hdmi_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="hdmi.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="hdmi_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="hdmi_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="hdmi_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="hdmi.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="hdmi_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="hdmi_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="hdmi_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="hdmi_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="hdmi_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="hdmi_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="hdmi_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="hdmi_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="hdmi_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="hdmi_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="hdmi_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="hdmi_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="hdmi_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="hdmi_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="hdmi_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="hdmi_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="hdmi_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="hdmi_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="hdmi_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="hdmi_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="hdmi_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="hdmi_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="hdmi_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="hdmi_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="hdmi_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="hdmi_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="hdmi_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="hdmi_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="hdmi_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="hdmi_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="hdmi_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="hdmi_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="hdmi_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="hdmi_methodology_drc_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="hdmi_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="hdmi_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="hdmi_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="hdmi_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="hdmi.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="hdmi_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="hdmi_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="hdmi.nky"/>
+  <File Type="BITSTR-BMM" Name="hdmi_bd.bmm"/>
   <File Type="PDI-FILE" Name="hdmi.pdi"/>
   <File Type="RCFI_FILE" Name="hdmi.rcfi"/>
   <File Type="CFI_FILE" Name="hdmi.cfi"/>
   <File Type="RNPI_FILE" Name="hdmi.rnpi"/>
   <File Type="NPI_FILE" Name="hdmi.npi"/>
   <File Type="RBD_FILE" Name="hdmi.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="hdmi.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="hdmi.sysdef"/>
+  <File Type="BG-BGN" Name="hdmi.bgn"/>
+  <File Type="BG-DRC" Name="hdmi.drc"/>
+  <File Type="RDI-RDI" Name="hdmi.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="hdmi_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="hdmi_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>

@@ -14,40 +14,18 @@ module hdmi(
 	output TMDSpred, TMDSnred,
 	output TMDSpgreen, TMDSngreen,
 	output TMDSpblue, TMDSnblue,
-	output TMDSp_clock, TMDSn_clock
+	output TMDSp_clock, TMDSn_clock,
+	output reg[3:0] led = 0
 );
-//    reg clk = 0;
-//    always #5 clk = ~clk;
+    
+    wire pll_locked;
     wire clk_pixel, clk_pixel_x5, clk_feedback;
     PLLE2_BASE #(
-      .BANDWIDTH("OPTIMIZED"),  // OPTIMIZED, HIGH, LOW
       .CLKFBOUT_MULT(8),        // Multiply value for all CLKOUT, (2-64)
-      .CLKFBOUT_PHASE(0.0),     // Phase offset in degrees of CLKFB, (-360.000-360.000).
       .CLKIN1_PERIOD(10.0),      // Input clock period in ns to ps resolution (i.e. 33.333 is 30 MHz).
       // CLKOUT0_DIVIDE - CLKOUT5_DIVIDE: Divide amount for each CLKOUT (1-128)
       .CLKOUT0_DIVIDE(4),
-      .CLKOUT1_DIVIDE(20),
-      .CLKOUT2_DIVIDE(1),
-      .CLKOUT3_DIVIDE(1),
-      .CLKOUT4_DIVIDE(1),
-      .CLKOUT5_DIVIDE(1),
-      // CLKOUT0_DUTY_CYCLE - CLKOUT5_DUTY_CYCLE: Duty cycle for each CLKOUT (0.001-0.999).
-      .CLKOUT0_DUTY_CYCLE(0.5),
-      .CLKOUT1_DUTY_CYCLE(0.5),
-      .CLKOUT2_DUTY_CYCLE(0.5),
-      .CLKOUT3_DUTY_CYCLE(0.5),
-      .CLKOUT4_DUTY_CYCLE(0.5),
-      .CLKOUT5_DUTY_CYCLE(0.5),
-      // CLKOUT0_PHASE - CLKOUT5_PHASE: Phase offset for each CLKOUT (-360.000-360.000).
-      .CLKOUT0_PHASE(0.0),
-      .CLKOUT1_PHASE(0.0),
-      .CLKOUT2_PHASE(0.0),
-      .CLKOUT3_PHASE(0.0),
-      .CLKOUT4_PHASE(0.0),
-      .CLKOUT5_PHASE(0.0),
-      .DIVCLK_DIVIDE(1),        // Master division value, (1-56)
-      .REF_JITTER1(0.0),        // Reference input jitter in UI, (0.000-0.999).
-      .STARTUP_WAIT("FALSE")    // Delay DONE until PLL Locks, ("TRUE"/"FALSE")
+      .CLKOUT1_DIVIDE(20)
    )
    PLLE2_BASE_inst (
       // Clock Outputs: 1-bit (each) output: User configurable clock outputs
@@ -59,7 +37,7 @@ module hdmi(
       .CLKOUT5(),   // 1-bit output: CLKOUT5
       // Feedback Clocks: 1-bit (each) output: Clock feedback ports
       .CLKFBOUT(clk_feedback), // 1-bit output: Feedback clock
-      .LOCKED(),     // 1-bit output: LOCK
+      .LOCKED(pll_locked),     // 1-bit output: LOCK
       .CLKIN1(clk),     // 1-bit input: Input clock
       // Control Ports: 1-bit (each) input: PLL control ports
       .PWRDWN(1'b0),     // 1-bit input: Power-down
@@ -67,6 +45,10 @@ module hdmi(
       // Feedback Clocks: 1-bit (each) input: Clock feedback ports
       .CLKFBIN(clk_feedback)    // 1-bit input: Feedback clock
    );
+    reg internal_reset = 1'b1;
+    always @(posedge clk_pixel) begin
+        internal_reset <= pll_locked ? 1'b0 : internal_reset;
+    end
            
     wire[15:0] wr_addr;
     wire wr_enable;
@@ -100,6 +82,7 @@ module hdmi(
         .out_pix(next_pix)
      );
      
+     
     
     always @(posedge clk_pixel)
     begin  
@@ -117,12 +100,11 @@ module hdmi(
     tmds_encoder encode_B(.clk_pixel(clk_pixel), .VD(blue ), .CD({vSync,hSync}), .VDE(DrawArea), .TMDS(TMDS_blue));
     
     wire tmds_red_output, tmds_green_output, tmds_blue_output, tmds_clock_output;
-    reg internal_reset = 1'b1;
-    always @(posedge clk_pixel) internal_reset <= 1'b0;
+    
     tmds_serializer ser_red(.clk_pixel(clk_pixel), .clk_pixel_x5(clk_pixel_x5), .internal_reset(internal_reset), .tmds_internal(TMDS_red), .tmds_output(tmds_red_output));
     tmds_serializer ser_green(.clk_pixel(clk_pixel), .clk_pixel_x5(clk_pixel_x5), .internal_reset(internal_reset), .tmds_internal(TMDS_green), .tmds_output(tmds_green_output));
     tmds_serializer ser_blue(.clk_pixel(clk_pixel), .clk_pixel_x5(clk_pixel_x5), .internal_reset(internal_reset), .tmds_internal(TMDS_blue), .tmds_output(tmds_blue_output));
-    tmds_serializer ser_clock(.clk_pixel(clk_pixel), .clk_pixel_x5(clk_pixel_x5), .internal_reset(internal_reset), .tmds_internal(10'b00000_11111), .tmds_output(tmds_clock_output));
+    tmds_serializer ser_clock(.clk_pixel(clk_pixel), .clk_pixel_x5(clk_pixel_x5), .internal_reset(internal_reset), .tmds_internal(10'b11111_00000), .tmds_output(tmds_clock_output));
     OBUFDS OBUFDS_red (.O(TMDSpred), .OB(TMDSnred), .I(tmds_red_output));
     OBUFDS OBUFDS_green (.O(TMDSpgreen), .OB(TMDSngreen), .I(tmds_green_output));
     OBUFDS OBUFDS_blue (.O(TMDSpblue), .OB(TMDSnblue), .I(tmds_blue_output));

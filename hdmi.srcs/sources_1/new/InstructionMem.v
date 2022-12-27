@@ -19,16 +19,16 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+`define total_instructions 256
 
 
 module InstructionMem #(
-    parameter base_text = 30'h00100000,
-    parameter total_instructions = 256
+    parameter base_text = 30'h00100000
 ) (
     input[29:0] pc,
     output[31:0] out
 );
-    reg[31:0] instructions_mem[base_text + total_instructions - 1:base_text];
+    reg[31:0] instructions_mem[`total_instructions - 1:0];
     initial $readmemh("instructions.txt", instructions_mem);
-    assign out = instructions_mem[pc];
+    assign out = instructions_mem[pc - base_text];
 endmodule

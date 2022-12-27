@@ -30,14 +30,14 @@ module MIPSRam(
     input[31:0] read_address,
     output[31:0] read_data
 );
-    reg[7:0] ram[`mem_base + `mem_size - 1:`mem_base];
+    reg[31:0] ram[`mem_size - 1:0];
     initial begin
         $readmemh("memory.txt", ram);
     end
     always @(posedge clk) begin
         if (mem_write)
-            ram[write_address[31:2]] <= write_data;
+            ram[write_address[31:2] - `mem_base] <= write_data;
     end
-    assign read_data = ram[read_address[31:2]];
+    assign read_data = ram[read_address[31:2] - `mem_base];
     
 endmodule

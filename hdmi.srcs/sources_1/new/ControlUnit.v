@@ -24,16 +24,16 @@
 module ControlUnit(
     input[5:0] opcode,
     input[5:0] funct,
-    output reg en_jump = 0,
-    output reg en_write_reg = 0,
-    output reg en_syscall = 0,
-    output reg alu_src = 0,
-    output reg[1:0] reg_dst = 0,
-    output reg mem_read = 0,
-    output reg mem_write = 0,
-    output reg bne = 0,
-    output reg beq = 0,
-    output reg zero_extend = 0
+    output reg en_jump,
+    output reg en_write_reg,
+    output reg en_syscall,
+    output reg alu_src,
+    output reg[1:0] reg_dst,
+    output reg mem_read,
+    output reg mem_write,
+    output reg bne,
+    output reg beq,
+    output reg zero_extend
 );
     always @(*) begin
         en_jump = 0;

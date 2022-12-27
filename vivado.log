@@ -1,0 +1,1171 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Dec 25 18:51:25 2022
+# Process ID: 15552
+# Current directory: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5616 C:\Users\nguye\Documents\rever\HDMI_MIPS_Verilog\hdmi.xpr
+# Log file: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/vivado.log
+# Journal file: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog\vivado.jou
+# Running On: DESKTOP-52T4KVE, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 67865 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/nguye/Documents/arty/hdmi' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1243.793 ; gain = 310.500
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-06:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319B4A1FCA
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/utils_1/imports/synth_1/hdmi.dcp with file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/hdmi.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 18:52:48 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 18:52:48 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-06:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319B4A1FCA
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/utils_1/imports/synth_1/hdmi.dcp with file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/hdmi.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 18:55:03 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 18:55:03 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-06:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319B4A1FCA
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/utils_1/imports/synth_1/hdmi.dcp with file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/hdmi.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:03:31 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 19:03:31 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:03:51 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 19:03:51 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-06:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319B4A1FCA
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/utils_1/imports/synth_1/hdmi.dcp with file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/hdmi.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:09:37 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 19:09:37 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/utils_1/imports/synth_1/hdmi.dcp with file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/hdmi.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:14:10 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 19:14:10 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35ticsg324-1L
+Top: hdmi
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4179.621 ; gain = 409.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hdmi' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/hdmi.v:12]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/hdmi.v:20]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:108995]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_BASE' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:108995]
+INFO: [Synth 8-6157] synthesizing module 'MIPS' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPS.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ControlUnit.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ControlUnit.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ControlUnit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DatapathUnit' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/DatapathUnit.v:25]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMem' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/InstructionMem.v:24]
+	Parameter base_text bound to: 30'b000000000100000000000000000000 
+	Parameter total_instructions bound to: 1024 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'instructions.txt' is read successfully [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/InstructionMem.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMem' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/InstructionMem.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Registers' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/Registers.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Registers' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/Registers.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALUControl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALUControl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALU.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALU.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALU.v:24]
+INFO: [Synth 8-6157] synthesizing module 'MIPSRam' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPSRam.v:25]
+INFO: [Synth 8-3876] $readmem data file 'memory.txt' is read successfully [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPSRam.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'MIPSRam' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPSRam.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'DatapathUnit' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/DatapathUnit.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'MIPS' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPS.v:23]
+INFO: [Synth 8-6157] synthesizing module 'getPixelText' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/getPixelText.v:23]
+	Parameter WIDTH bound to: 800 - type: integer 
+	Parameter HEIGHT bound to: 600 - type: integer 
+	Parameter font_width bound to: 7 - type: integer 
+	Parameter font_height bound to: 10 - type: integer 
+	Parameter Fontfile bound to: font.txt - type: string 
+INFO: [Synth 8-3876] $readmem data file 'font.txt' is read successfully [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/getPixelText.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'getPixelText' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/getPixelText.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tmds_encoder' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_encoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tmds_channel' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_encoder.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'tmds_channel' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_encoder.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'tmds_encoder' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_encoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tmds_serializer' [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_serializer.v:24]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'tmds_serializer' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_serializer.v:24]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi' (0#1) [C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/hdmi.v:12]
+WARNING: [Synth 8-7129] Port wr_addr[15] in module getPixelText is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_addr[14] in module getPixelText is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_addr[13] in module getPixelText is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[31] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[30] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[29] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[28] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[27] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[26] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[25] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[24] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[23] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[22] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[21] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[20] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[19] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[18] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[17] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[16] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[15] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[14] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[13] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[12] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[1] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_address[0] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[31] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[30] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[29] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[28] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[27] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[26] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[25] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[24] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[23] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[22] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[21] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[20] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[19] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[18] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[17] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[16] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[15] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[14] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[13] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[12] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[11] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[10] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[9] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data[8] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[31] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[30] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[29] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[28] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[27] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[26] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[25] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[24] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[23] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[22] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[21] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[20] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[19] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[18] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[17] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[16] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[15] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[14] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[13] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[12] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[1] in module MIPSRam is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_address[0] in module MIPSRam is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4272.094 ; gain = 501.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4290.012 ; gain = 519.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4290.012 ; gain = 519.527
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4302.059 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+44 Infos, 72 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 4305.684 ; gain = 820.043
+INFO: [Common 17-344] 'synth_design' was cancelled
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/memory.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/instructions.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/font.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj hdmi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/DatapathUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DatapathUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/InstructionMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPSRam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPSRam
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/getPixelText.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module getPixelText
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tmds_encoder
+INFO: [VRFC 10-311] analyzing module tmds_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_serializer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tmds_serializer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hdmi_behav xil_defaultlib.hdmi xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hdmi_behav xil_defaultlib.hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=8,CLKIN1...
+Compiling module unisims_ver.PLLE2_BASE(CLKFBOUT_MULT=8,CLKIN...
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.InstructionMem(total_instruction...
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.MIPSRam
+Compiling module xil_defaultlib.DatapathUnit
+Compiling module xil_defaultlib.MIPS
+Compiling module xil_defaultlib.getPixelText_default
+Compiling module xil_defaultlib.tmds_channel
+Compiling module xil_defaultlib.tmds_encoder
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.tmds_serializer
+Compiling module unisims_ver.OBUFDS
+Compiling module xil_defaultlib.hdmi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hdmi_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 4305.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hdmi_behav -key {Behavioral:sim_1:Functional:hdmi} -tclbatch {hdmi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source hdmi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hdmi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 4313.535 ; gain = 7.852
+run 1 ms
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:40 . Memory (MB): peak = 4313.676 ; gain = 0.000
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 23480 KB (Peak: 23480 KB), Simulation CPU Usage: 39483 ms
+INFO: [Simtcl 6-16] Simulation closed
+close_hw_manager
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/memory.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/instructions.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/font.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj hdmi_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hdmi_behav xil_defaultlib.hdmi xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hdmi_behav xil_defaultlib.hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hdmi_behav -key {Behavioral:sim_1:Functional:hdmi} -tclbatch {hdmi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source hdmi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hdmi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-06:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319B4A1FCA
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/utils_1/imports/synth_1/hdmi.dcp with file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/hdmi.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:24:21 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 19:24:21 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+close_hw_manager
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4321.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.021 . Memory (MB): peak = 4760.902 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.022 . Memory (MB): peak = 4760.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4760.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4919.719 ; gain = 598.352
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/utils_1/imports/synth_1/hdmi.dcp with file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/hdmi.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:26:30 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 19:26:30 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-06:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319B4A1FCA
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/utils_1/imports/synth_1/hdmi.dcp with file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/hdmi.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:30:57 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 19:30:57 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-06:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319B4A1FCA
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/utils_1/imports/synth_1/hdmi.dcp with file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/hdmi.dcp
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/memory.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/instructions.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/font.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj hdmi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/DatapathUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DatapathUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/InstructionMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPSRam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPSRam
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/getPixelText.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module getPixelText
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tmds_encoder
+INFO: [VRFC 10-311] analyzing module tmds_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_serializer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tmds_serializer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hdmi_behav xil_defaultlib.hdmi xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hdmi_behav xil_defaultlib.hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=8,CLKIN1...
+Compiling module unisims_ver.PLLE2_BASE(CLKFBOUT_MULT=8,CLKIN...
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.InstructionMem(total_instruction...
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.MIPSRam
+Compiling module xil_defaultlib.DatapathUnit
+Compiling module xil_defaultlib.MIPS
+Compiling module xil_defaultlib.getPixelText_default
+Compiling module xil_defaultlib.tmds_channel
+Compiling module xil_defaultlib.tmds_encoder
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.tmds_serializer
+Compiling module unisims_ver.OBUFDS
+Compiling module xil_defaultlib.hdmi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hdmi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hdmi_behav -key {Behavioral:sim_1:Functional:hdmi} -tclbatch {hdmi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source hdmi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hdmi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 4940.492 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319B4A1FCA
+run 1 ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 4978.387 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-06:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Arty A7-35T-210319B4A1FCA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-06:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319B4A1FCA
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:37:04 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 19:37:04 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:37:15 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 19:37:15 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+close_hw_manager
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-06:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319B4A1FCA
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:41:43 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/utils_1/imports/synth_1/hdmi.dcp with file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/hdmi.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:46:39 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 19:46:39 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/hdmi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/memory.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/instructions.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/font.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj hdmi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/DatapathUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DatapathUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/InstructionMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPSRam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPSRam
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/getPixelText.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module getPixelText
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tmds_encoder
+INFO: [VRFC 10-311] analyzing module tmds_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_serializer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tmds_serializer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hdmi_behav xil_defaultlib.hdmi xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hdmi_behav xil_defaultlib.hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=8,CLKIN1...
+Compiling module unisims_ver.PLLE2_BASE(CLKFBOUT_MULT=8,CLKIN...
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.InstructionMem(total_instruction...
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.MIPSRam
+Compiling module xil_defaultlib.DatapathUnit
+Compiling module xil_defaultlib.MIPS
+Compiling module xil_defaultlib.getPixelText_default
+Compiling module xil_defaultlib.tmds_channel
+Compiling module xil_defaultlib.tmds_encoder
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.tmds_serializer
+Compiling module unisims_ver.OBUFDS
+Compiling module xil_defaultlib.hdmi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hdmi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hdmi_behav -key {Behavioral:sim_1:Functional:hdmi} -tclbatch {hdmi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source hdmi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hdmi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 4983.547 ; gain = 2.684
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/utils_1/imports/synth_1/hdmi.dcp with file C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/hdmi.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Dec 25 19:54:00 2022] Launched synth_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/synth_1/runme.log
+[Sun Dec 25 19:54:00 2022] Launched impl_1...
+Run output will be captured here: C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/simulate.log"
+close_project
+open_project C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.sim/sim_1/behav/xsim/simulate.log"
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 25 19:54:30 2022...

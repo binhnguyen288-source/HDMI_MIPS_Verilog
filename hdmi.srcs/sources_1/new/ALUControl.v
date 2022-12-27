@@ -23,7 +23,7 @@
 module ALUControl(
     input[5:0] opcode,
     input[5:0] funct,
-    output reg[5:0] alu_control = 0
+    output reg[5:0] alu_control
 );
     always @(*) begin
         if (opcode == 6'd0) begin

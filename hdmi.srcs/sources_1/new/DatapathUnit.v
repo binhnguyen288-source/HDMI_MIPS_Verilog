@@ -20,7 +20,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 `define base_text 30'h00100000
-`define total_instructions 1024
 
 module DatapathUnit(
     input clk,
@@ -42,8 +41,7 @@ module DatapathUnit(
     
     reg[29:0] pc = `base_text;
     InstructionMem #(
-        .base_text(`base_text),
-        .total_instructions(`total_instructions)
+        .base_text(`base_text)
     ) instr(.pc(pc), .out(instruction));
     
     wire[29:0] inc_pc = pc + 1;

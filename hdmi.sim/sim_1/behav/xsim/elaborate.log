@@ -11,7 +11,7 @@ Time Resolution for simulation is 1ps
 Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=8,CLKIN1...
 Compiling module unisims_ver.PLLE2_BASE(CLKFBOUT_MULT=8,CLKIN...
 Compiling module xil_defaultlib.ControlUnit
-Compiling module xil_defaultlib.InstructionMem
+Compiling module xil_defaultlib.InstructionMem(total_instruction...
 Compiling module xil_defaultlib.Registers
 Compiling module xil_defaultlib.ALUControl
 Compiling module xil_defaultlib.ALU
@@ -19,7 +19,11 @@ Compiling module xil_defaultlib.MIPSRam
 Compiling module xil_defaultlib.DatapathUnit
 Compiling module xil_defaultlib.MIPS
 Compiling module xil_defaultlib.getPixelText_default
-Compiling module xil_defaultlib.TMDS_encoder
+Compiling module xil_defaultlib.tmds_channel
+Compiling module xil_defaultlib.tmds_encoder
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.tmds_serializer
 Compiling module unisims_ver.OBUFDS
 Compiling module xil_defaultlib.hdmi
 Compiling module xil_defaultlib.glbl

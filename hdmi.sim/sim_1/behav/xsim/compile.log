@@ -1,21 +1,25 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALUControl
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ControlUnit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/DatapathUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/DatapathUnit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DatapathUnit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/InstructionMem.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/InstructionMem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module InstructionMem
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/MIPS.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPS.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MIPS
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/MIPSRam.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPSRam.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MIPSRam
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/Registers.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Registers
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/getPixelText.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/getPixelText.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module getPixelText
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/arty/hdmi/hdmi.srcs/sources_1/new/hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tmds_encoder
+INFO: [VRFC 10-311] analyzing module tmds_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_serializer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tmds_serializer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/hdmi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module hdmi
-INFO: [VRFC 10-311] analyzing module TMDS_encoder
