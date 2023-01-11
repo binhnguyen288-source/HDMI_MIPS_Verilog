@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Tue Dec 27 16:28:33 2022
+| Date         : Mon Jan  9 12:48:46 2023
 | Host         : DESKTOP-52T4KVE running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file hdmi_control_sets_placed.rpt
 | Design       : hdmi
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |   114 |
-|    Minimum number of control sets                        |   114 |
+| Total control sets                                       |   187 |
+|    Minimum number of control sets                        |   187 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    20 |
+| Unused register locations in slices containing registers |    35 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |   114 |
-| >= 0 to < 4        |     0 |
+| Total control sets |   187 |
+| >= 0 to < 4        |     2 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     0 |
-| >= 10 to < 12      |     2 |
+| >= 10 to < 12      |     1 |
 | >= 12 to < 14      |   108 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     3 |
+| >= 16              |    75 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,135 +58,208 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              85 |           61 |
+| No           | No                    | No                     |              18 |            9 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              30 |           12 |
-| Yes          | No                    | No                     |              33 |           11 |
+| No           | Yes                   | No                     |             263 |          152 |
+| Yes          | No                    | No                     |            1029 |          507 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |              39 |           20 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------+--------------------------------------+---------------------------+------------------+----------------+--------------+
-|   Clock Signal  |             Enable Signal            |      Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
-+-----------------+--------------------------------------+---------------------------+------------------+----------------+--------------+
-|  clk_pixel_BUFG |                                      | mips/datapath/alu/en_next |                4 |              7 |         1.75 |
-|  clk_pixel_BUFG | CounterY0                            |                           |                5 |             11 |         2.20 |
-|  clk_pixel_BUFG |                                      | p_0_in                    |                5 |             11 |         2.20 |
-|  clk_pixel_BUFG | getPix/str_reg_6208_6271_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG |                                      | encode_R/channel/SR[0]    |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5888_5951_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5952_6015_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5696_5759_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6016_6079_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5760_5823_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_576_639_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5824_5887_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6336_6399_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6400_6463_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6272_6335_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_832_895_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_640_703_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6080_6143_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6144_6207_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6720_6783_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6592_6655_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_64_127_0_2_i_1_n_0    |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6784_6847_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6528_6591_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6464_6527_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_6656_6719_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_704_767_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_960_1023_0_2_i_1_n_0  |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_768_831_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4864_4927_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_896_959_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5120_5183_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5184_5247_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5568_5631_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5376_5439_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5440_5503_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5632_5695_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5312_5375_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5248_5311_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5504_5567_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1088_1151_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1024_1087_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1152_1215_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_0_63_0_2_i_1_n_0      |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1216_1279_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1472_1535_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1408_1471_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_128_191_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1536_1599_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1344_1407_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1280_1343_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1728_1791_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_192_255_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1600_1663_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1792_1855_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1856_1919_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1664_1727_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1920_1983_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2112_2175_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2176_2239_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2240_2303_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2048_2111_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_1984_2047_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2304_2367_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2624_2687_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2752_2815_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2368_2431_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_256_319_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2432_2495_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2688_2751_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2560_2623_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2496_2559_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2880_2943_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3200_3263_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2816_2879_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_2944_3007_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3072_3135_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3136_3199_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3008_3071_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3264_3327_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3584_3647_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3328_3391_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3392_3455_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3520_3583_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3456_3519_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_320_383_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3776_3839_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3968_4031_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3712_3775_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3904_3967_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_384_447_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3648_3711_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_3840_3903_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4352_4415_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4096_4159_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4160_4223_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4224_4287_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4288_4351_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4032_4095_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4672_4735_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4736_4799_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4480_4543_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4800_4863_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_448_511_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4608_4671_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4416_4479_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4544_4607_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4928_4991_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_512_575_0_2_i_1_n_0   |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_5056_5119_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | getPix/str_reg_4992_5055_0_2_i_1_n_0 |                           |                3 |             12 |         4.00 |
-|  clk_pixel_BUFG | mips/datapath/ADDRC[0]               |                           |                6 |             22 |         3.67 |
-|  clk_pixel_BUFG |                                      |                           |               61 |             85 |         1.39 |
-|  clk_pixel_BUFG | mips/datapath/regs/en_write          |                           |               11 |             88 |         8.00 |
-+-----------------+--------------------------------------+---------------------------+------------------+----------------+--------------+
++-----------------+-------------------------------------------------------------------+----------------------+------------------+----------------+--------------+
+|   Clock Signal  |                           Enable Signal                           |   Set/Reset Signal   | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+-------------------------------------------------------------------+----------------------+------------------+----------------+--------------+
+|  clk_mips_BUFG  |                                                                   |                      |                1 |              1 |         1.00 |
+|  clk_pixel_BUFG | CounterY                                                          |                      |                2 |              3 |         1.50 |
+|  clk_pixel_BUFG | CounterY                                                          | CounterY[10]_i_1_n_0 |                4 |              7 |         1.75 |
+|  clk_pixel_BUFG |                                                                   | CounterY             |                5 |             11 |         2.20 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_10  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_0   |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_1   |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_11  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_23  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_31  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_33  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_19  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_2   |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_26  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_36  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_4   |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_40  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_22  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_39  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_42  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_18  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_102 |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_34  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_43  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_3   |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_47  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_48  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_101 |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_49  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_50  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_53  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_104 |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_103 |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_14  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_28  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_105 |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_15  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_17  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_44  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_27  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_52  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_54  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_55  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_29  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_56  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_57  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_13  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_35  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_38  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_46  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_58  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_59  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_6   |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_60  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_41  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_5   |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_61  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_37  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_51  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_62  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_100 |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_21  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_32  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_106 |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_12  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_16  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_20  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_24  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_25  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_30  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_86  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_83  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_66  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_96  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_64  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_94  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_69  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_80  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_63  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_84  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_93  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_99  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_76  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_77  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_65  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_89  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_95  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_98  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_85  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_70  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_75  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_82  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_67  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_79  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_88  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_71  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_68  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_97  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_7   |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_74  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_73  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_78  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_72  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_81  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_92  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_8   |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_87  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_9   |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_90  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_91  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG | FIFO_DUALCLOCK_MACRO_inst/genblk5_0.fifo_18_bl_1.fifo_18_bl_1_45  |                      |                3 |             12 |         4.00 |
+|  clk_pixel_BUFG |                                                                   | encode_G/SR[0]       |                2 |             12 |         6.00 |
+|  clk_pixel_BUFG |                                                                   |                      |                8 |             17 |         2.12 |
+|  clk_mips_BUFG  | mips/datapath/ram/regs[30][31]_i_2_0[0]                           | fifo_reset           |               16 |             32 |         2.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/E[0]                                            |                      |               11 |             32 |         2.91 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_21[0]                            |                      |               14 |             32 |         2.29 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_22[0]                            |                      |               27 |             32 |         1.19 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_25[0]                            |                      |               19 |             32 |         1.68 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_26[0]                            |                      |               11 |             32 |         2.91 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_4[0]                             |                      |               11 |             32 |         2.91 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_6[0]                             |                      |                9 |             32 |         3.56 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_1[0]                             |                      |               19 |             32 |         1.68 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_11[0]                            |                      |               13 |             32 |         2.46 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_17[0]                            |                      |               13 |             32 |         2.46 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_18[0]                            |                      |               18 |             32 |         1.78 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_23[0]                            |                      |               16 |             32 |         2.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_14[0]                            |                      |               16 |             32 |         2.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_27[0]                            |                      |               20 |             32 |         1.60 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_28[0]                            |                      |               15 |             32 |         2.13 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_13[0]                            |                      |               18 |             32 |         1.78 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_19[0]                            |                      |               12 |             32 |         2.67 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_5[0]                             |                      |               25 |             32 |         1.28 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_3[0]                             |                      |               20 |             32 |         1.60 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_7[0]                             |                      |               14 |             32 |         2.29 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_8[0]                             |                      |               15 |             32 |         2.13 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_24[0]                            |                      |               14 |             32 |         2.29 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_10[0]                            |                      |               14 |             32 |         2.29 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_9[0]                             |                      |               11 |             32 |         2.91 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg[0]                               |                      |               17 |             32 |         1.88 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_0[0]                             |                      |                8 |             32 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_15[0]                            |                      |               26 |             32 |         1.23 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_16[0]                            |                      |               15 |             32 |         2.13 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_2[0]                             |                      |               19 |             32 |         1.68 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_20[0]                            |                      |               12 |             32 |         2.67 |
+|  clk_mips_BUFG  | mips/datapath/ram/fifo_reset_reg_12[0]                            |                      |               18 |             32 |         1.78 |
+|  clk_mips_BUFG  | mips/datapath/ram/hi_lo[16]_i_5_0[0]                              |                      |               15 |             34 |         2.27 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_0_127_0_0_i_2_n_0                       |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_4224_4351_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_4352_4479_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_4480_4607_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_4608_4735_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_4736_4863_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_4864_4991_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_4992_5119_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_512_639_0_0_i_1_n_0                     |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_640_767_0_0_i_1_n_0                     |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_768_895_0_0_i_1_n_0                     |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_896_1023_0_0_i_1_n_0                    |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_1280_1407_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_128_255_0_0_i_1_n_0                     |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_1408_1535_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_1536_1663_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_1664_1791_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_1792_1919_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_1920_2047_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_2048_2175_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_2176_2303_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_2304_2431_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_2432_2559_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_2560_2687_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_256_383_0_0_i_1_n_0                     |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_2688_2815_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_2816_2943_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_2944_3071_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_3072_3199_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_3200_3327_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_3328_3455_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_3456_3583_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_3584_3711_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_3712_3839_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_3840_3967_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_384_511_0_0_i_1_n_0                     |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_3968_4095_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_4096_4223_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_1024_1151_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  | mips/datapath/ram/ram_reg_1152_1279_0_0_i_1_n_0                   |                      |               32 |            128 |         4.00 |
+|  clk_mips_BUFG  |                                                                   | fifo_reset           |              145 |            240 |         1.66 |
++-----------------+-------------------------------------------------------------------+----------------------+------------------+----------------+--------------+
 
 

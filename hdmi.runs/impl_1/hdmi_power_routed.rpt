@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Tue Dec 27 16:29:00 2022
+| Date             : Mon Jan  9 12:49:54 2023
 | Host             : DESKTOP-52T4KVE running 64-bit major release  (build 9200)
 | Command          : report_power -file hdmi_power_routed.rpt -pb hdmi_power_summary_routed.pb -rpx hdmi_power_routed.rpx
 | Design           : hdmi
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.300        |
+| Total On-Chip Power (W)  | 0.347        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.238        |
+| Dynamic (W)              | 0.284        |
 | Device Static (W)        | 0.062        |
 | Effective TJA (C/W)      | 4.8          |
-| Max Ambient (C)          | 98.6         |
-| Junction Temperature (C) | 26.4         |
+| Max Ambient (C)          | 98.3         |
+| Junction Temperature (C) | 26.7         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,20 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.002 |        6 |       --- |             --- |
-| Slice Logic              |     0.003 |     3177 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1224 |     20800 |            5.88 |
-|   LUT as Distributed RAM |    <0.001 |     1328 |      9600 |           13.83 |
-|   CARRY4                 |    <0.001 |       33 |      8150 |            0.40 |
-|   F7/F8 Muxes            |    <0.001 |      164 |     32600 |            0.50 |
-|   Register               |    <0.001 |      148 |     41600 |            0.36 |
-|   Others                 |     0.000 |       35 |       --- |             --- |
-| Signals                  |     0.007 |     2369 |       --- |             --- |
-| PLL                      |     0.094 |        1 |         5 |           20.00 |
-| DSPs                     |    <0.001 |        2 |        90 |            2.22 |
-| I/O                      |     0.132 |       13 |       210 |            6.19 |
+| Clocks                   |     0.005 |        7 |       --- |             --- |
+| Slice Logic              |     0.013 |    14607 |       --- |             --- |
+|   LUT as Logic           |     0.007 |     3072 |     20800 |           14.77 |
+|   LUT as Distributed RAM |     0.005 |     6404 |      9600 |           66.71 |
+|   F7/F8 Muxes            |    <0.001 |     3503 |     32600 |           10.75 |
+|   CARRY4                 |    <0.001 |       63 |      8150 |            0.77 |
+|   Register               |    <0.001 |     1349 |     41600 |            3.24 |
+|   Others                 |     0.000 |       38 |       --- |             --- |
+| Signals                  |     0.041 |     7220 |       --- |             --- |
+| Block RAM                |     0.001 |      0.5 |        50 |            1.00 |
+| PLL                      |     0.092 |        1 |         5 |           20.00 |
+| DSPs                     |    <0.001 |        4 |        90 |            4.44 |
+| I/O                      |     0.132 |        9 |       210 |            4.29 |
 | Static Power             |     0.062 |          |           |                 |
-| Total                    |     0.300 |          |           |                 |
+| Total                    |     0.347 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,8 +76,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       0.950 |     0.027 |       0.020 |      0.006 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.060 |       0.049 |      0.011 |       NA    | Unspecified | NA         |
+| Vccint    |       0.950 |     0.077 |       0.070 |      0.006 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.060 |       0.048 |      0.011 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.041 |       0.040 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -132,6 +133,7 @@ Table of Contents
 | Clock        | Domain       | Constraint (ns) |
 +--------------+--------------+-----------------+
 | clk_feedback | clk_feedback |            10.0 |
+| clk_mips     | clk_mips     |            50.0 |
 | clk_pixel    | clk_pixel    |            25.0 |
 | clk_pixel_x5 | clk_pixel_x5 |             5.0 |
 | sys_clk_pin  | clk          |            10.0 |
@@ -144,14 +146,16 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+--------------+-----------+
-| Name         | Power (W) |
-+--------------+-----------+
-| hdmi         |     0.238 |
-|   getPix     |     0.007 |
-|   mips       |     0.004 |
-|     datapath |     0.004 |
-|       alu    |     0.004 |
-+--------------+-----------+
++-----------------------------+-----------+
+| Name                        | Power (W) |
++-----------------------------+-----------+
+| hdmi                        |     0.284 |
+|   FIFO_DUALCLOCK_MACRO_inst |     0.004 |
+|   getPix                    |     0.009 |
+|   mips                      |     0.047 |
+|     datapath                |     0.047 |
+|       ram                   |     0.033 |
+|       regs                  |     0.004 |
++-----------------------------+-----------+
 
 

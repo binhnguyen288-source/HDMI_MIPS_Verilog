@@ -91,17 +91,18 @@ read_mem {
   C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/instructions.txt
   C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/font.txt
 }
+read_verilog -library xil_defaultlib -sv {
+  C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPSRam.v
+  C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/getPixel.sv
+  C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_encoder.sv
+}
 read_verilog -library xil_defaultlib {
   C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALU.v
   C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ALUControl.v
   C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/ControlUnit.v
   C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/DatapathUnit.v
-  C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/InstructionMem.v
   C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPS.v
-  C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/MIPSRam.v
   C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/Registers.v
-  C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/getPixelText.v
-  C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_encoder.v
   C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/tmds_serializer.v
   C:/Users/nguye/Documents/rever/HDMI_MIPS_Verilog/hdmi.srcs/sources_1/new/hdmi.v
 }

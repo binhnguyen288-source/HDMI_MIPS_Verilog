@@ -20,6 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
+//module mul32x32(
+//    input[31:0] a,
+//    input[31:0] b,
+//    output[63:0] c
+//);
+//    wire[31:0] z2 = a[31:16] * b[31:16];
+//    wire[31:0] z0 = a[15:0] * b[15:0];
+//    wire sign = (a[15:0] < a[31:16]) ^ (b[31:16] < b[15:0]);
+//    wire[15:0] a0_a1 = (a[15:0] < a[31:16]) ? a[31:16] - a[15:0] : a[15:0] - a[31:16];
+//    wire[15:0] b1_b0 = (b[31:16] < b[15:0]) ? b[15:0] - b[31:16] : b[31:16] - b[15:0];
+//    wire[32:0] z1 = sign ? z2 + z0 - a0_a1 * b1_b0 : z2 + z0 + a0_a1 * b1_b0;
+//    assign c = {z2, z0} + {z1, {16{1'b0}}};
+//endmodule
 
 module ALU(
     input clk,
@@ -27,52 +40,32 @@ module ALU(
     input[31:0] a,
     input[31:0] b,
     input[4:0] shamt,
-    output reg[31:0] c = 0,
-    output zero_flag,
-    output en_next
+    output reg[31:0] c,
+    output zero_flag
 );
     wire signed [31:0] signed_a = a;
     wire signed [31:0] signed_b = b;
-    reg[63:0] hi_lo = 0;
-    reg[63:0] hi_lo_temp = 0;
     
-    reg[5:0] count_down = 0;
-    reg[5:0] cap_count_down = 0;
-    assign en_next = count_down == cap_count_down;
-    
-    wire[63:0] div_cmp = b << (31-count_down);
+    reg[31:0] a0b0;
+    reg[31:0] a0b1;
+    reg[31:0] a1b0;
+    reg[31:0] a1b1;
+    //wire[63:0] hi_lo = {a1b1, a0b0} + {a1b0 + a0b1, {16{1'b0}}};
+    reg[63:0] hi_lo;
     
     always @(posedge clk) begin
-        if (!en_next) begin
-            if (alu_control == 6'd8) begin
-                hi_lo[count_down+:40] <= hi_lo[count_down+:40] + hi_lo_temp;
-                count_down            <= count_down + 8;
-            end
-            else begin
-                hi_lo[31-count_down] <= hi_lo_temp[31];
-                hi_lo[63:32]         <= hi_lo_temp[63:32];
-                count_down           <= count_down + 1;
-            end
-        end
-        else count_down <= 0;
-    end
-    
-    wire[31:0] div_temp_mux = count_down == 0 ? a : hi_lo[63:32];
-    
-    always @(*) begin
-        hi_lo_temp = 0;
-        if (alu_control == 6'd8) begin
-            hi_lo_temp = a[count_down+:8] * b;
-        end else if (alu_control == 6'd10) begin
-            hi_lo_temp[31] = div_temp_mux >= div_cmp;
-            hi_lo_temp[63:32] = hi_lo_temp[31] ? div_temp_mux - div_cmp : div_temp_mux;
+        if (alu_control == 6'd8 || alu_control == 6'd9) begin
+//            a0b0 <= a[15:0] * b[15:0];
+//            a0b1 <= a[15:0] * b[31:16];
+//            a1b0 <= a[31:16] * b[15:0];
+//            a1b1 <= a[31:16] * b[31:16];
+            hi_lo <= a * b;
         end
     end
     
     
+    
     always @(*) begin
-        c = 0;
-        cap_count_down = 0;
         case (alu_control)
             6'd1:  c = a + b;
             6'd2:  c = a - b;
@@ -81,15 +74,16 @@ module ALU(
             6'd5:  c = ~(a | b);
             6'd6:  c = signed_a < signed_b;
             6'd7:  c = a < b;
-            6'd8:  cap_count_down = 32;
+//            6'd8:  c = 0;//cap_count_down = 32;
 //            6'd9:  {hi, lo} = a * b;
-            6'd10: cap_count_down = 32;
+//            6'd10: cap_count_down = 32;
 //            6'd11: {hi, lo} = {a % b, a / b};
             6'd12: c = hi_lo[63:32];
             6'd13: c = hi_lo[31:0];
             6'd14: c = {b[15:0], {16{1'b0}}}; // lui
             6'd15: c = b << shamt;
             6'd16: c = b >> shamt;
+            default: c = 0;
         endcase
     end
     assign zero_flag = c == 32'd0;

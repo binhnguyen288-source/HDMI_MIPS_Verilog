@@ -21,6 +21,7 @@
 
 
 module Registers(
+    input rst,
     input clk,
     input[4:0] read_reg_1,
     input[4:0] read_reg_2,
@@ -30,6 +31,7 @@ module Registers(
     output[31:0] read_data_1,
     output[31:0] read_data_2
 );
+    parameter[31:0] init_fp = 0;
     reg[31:0] regs[31:0];
     integer i;
     initial begin
@@ -38,7 +40,9 @@ module Registers(
     end
     
     always @(posedge clk) begin
-        if (en_write)
+        if (rst)
+            regs[29] <= init_fp;
+        else if (en_write)
             regs[write_reg] <= write_data;
     end
     

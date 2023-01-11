@@ -21,6 +21,7 @@
 
 
 module MIPS(
+    input rst,
     input clk,
     output[15:0] write_char_addr,
     output[7:0] write_char,
@@ -40,8 +41,7 @@ module MIPS(
     wire zero_extend;
     wire[1:0] reg_dst;
     ControlUnit control(
-        .opcode(instruction[31:26]), 
-        .funct(instruction[5:0]), 
+        .instruction(instruction), 
         .en_jump(en_jump), 
         .en_write_reg(en_write_reg),
         .en_syscall(en_syscall),
@@ -55,6 +55,7 @@ module MIPS(
     );
     
     DatapathUnit datapath(
+        .rst(rst),
         .clk(clk),
         .en_jump(en_jump),
         .en_write_reg(en_write_reg),
